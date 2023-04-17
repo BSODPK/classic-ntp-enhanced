@@ -8,8 +8,8 @@
 if (typeof window.chrome.embeddedSearch == "undefined") {
   window.chrome = {"embeddedSearch":{"searchBox":{"rtl":false,"isFocused":false,"isKeyCaptureEnabled":false},"newTabPage":{"isInputInProgress":false,"isIncognito":false,"themeBackgroundInfo":{"usingDefaultTheme":true,"colorRgba":"rgba(0,0,0,0)","backgroundColorRgba":[0,0,0,0],"textColorRgba":[0,0,0,0],"linkColorRgba":[0,0,0,0],"textColorLightRgba":[0,0,0,0],"headerColorRgba":[0,0,0,0],"sectionBorderColorRgba":[0,0,0,0],"alternateLogo":false}}}}
   chrome.embeddedSearch.newTabPage.mostVisitedAvailable = true;
-  chrome.embeddedSearch.newTabPage.mostVisited = [{"rid":0,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/25"},{"rid":1,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/26"},{"rid":3,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/27"},{"rid":4,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/28"},{"rid":5,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/29"},{"rid":6,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/30"},{"rid":7,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/31"},{"rid":8,"faviconUrl":"chrome-search://favicon/size/16@2.625000x/1/32"}];
-  chrome.embeddedSearch.newTabPage.getMostVisitedItemData = function (rid) { return {url: 'http://mostvisited' + rid + '.com' }; }
+  chrome.embeddedSearch.newTabPage.mostVisited = [{"rid":"google","faviconUrl":"https://www.google.com/favicon.ico"}];
+  chrome.embeddedSearch.newTabPage.getMostVisitedItemData = function (rid) { return {url: {"google": "https://google.com"}[rid] }; }
 }
 </script>
 <!-- Copyright 2019 Geometry OU / Kiwi Browser -->
