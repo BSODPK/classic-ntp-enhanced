@@ -80,8 +80,9 @@ button {
 }
 
 #ntp-contents {
-  height: 100%;
-  position: relative;
+  // height: 100%;
+  position: absolute;
+  bottom: 0;
   z-index: 1;
   width: 98%;
 }
