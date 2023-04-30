@@ -746,6 +746,11 @@ input:checked + .toggle::before {
 #bookmarks-grid, #fake-bookmarks-grid {
     margin: 2%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #fake-bookmarks-grid {
